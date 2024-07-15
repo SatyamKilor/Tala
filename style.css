@@ -1,0 +1,482 @@
+@font-face {
+    font-family: atilla;
+    src: url(./Atilla.tff);
+}
+
+@font-face {
+    font-family: monsterrat;
+    src: url(./Montserrat-Regular.tff);
+}
+@font-face {
+    font-family: havelock;
+    src: url(./Havelock-Regular.otf);
+}
+@font-face {
+    font-family: dancs;
+    src: url(./DancingScript.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #d1d1d1;
+    font-family: "atilla";
+}
+
+body{
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    background-color: #222;
+}
+
+#fscr-nav{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    position: fixed;
+    top: -100vh;
+    padding: 100px 150px;
+    transition: all ease 0.9s;
+    color: #222;
+    z-index: 98;
+}
+#fscr-nav h1{
+    font-size: 240px;
+    color: #222;
+}
+
+#nav{
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 99;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+}
+
+#nav-part2 h3{
+    transition: all ease 0.9s;
+}
+
+#nav-part2 i{
+    font-size: 30px;
+    margin-left: 50px;
+    transition: all ease 0.9s;
+    cursor: pointer;
+}
+#nav h2{
+    text-transform: uppercase;
+    transition: all ease 0.9s;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+#page1{
+    min-height: 85vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1 h1{
+    position: absolute;
+    left: 5.5%;
+    top: 21%;
+    letter-spacing: 15px;
+    font-size: 13vw;
+    z-index: 1;
+}
+
+#page1 h2{
+    position: absolute;
+    left: 18%;
+    top: 55%;
+    font-size: 3.1vw;
+    line-height: 2.6vw;
+    width: 30%;   
+    z-index: 1;
+}
+
+#page1 h3{
+    position: absolute;
+    left: 70%;
+    top: 57%;
+    font-size: 0.85vw;
+    line-height: 0.85vw;
+    width: 10%;
+    z-index: 1;
+}
+
+#page2 img{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    left: 30%;
+    transform: rotate(-45deg) scale(0.9);
+}
+
+#page2{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+
+#page2 h1{
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+    /* margin-bottom: 50vh; */
+    transform-origin: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotateX(270deg);
+    opacity: 0;
+}
+
+#h11{
+    margin-top: 20vh;
+}
+
+#page2 h1 span{
+    font-family: "dancs";
+}
+
+#page3{
+    position: relative;
+    height: 10px;
+    width:  100%;
+    background-color: white;
+}
+
+#page4{
+    height: 82vh;
+    width: 100%;
+    position: relative;
+    padding: 60px 140px;
+}
+#page4 h1{
+    font-size: 7.8vw;
+}
+
+#page5{
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+}
+
+#p5elems{
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#p5elems h1{
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+    font-size: 60px;
+    padding: 10px 40px;
+    border: 1px solid #d1d1d1;
+}
+
+#p5elems h2{
+    width: 30%;
+    height: 100%;
+    /* background-color: yellow; */
+    font-size: 25px;
+    padding: 25px 40px;
+    border-top: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#page5-content{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/160/842/original/night-starry-skies-with-white-blinking-stars-video.jpg) ;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+#page5-content h1{
+    /* margin-top: 50px; */
+    font-size: 3.5vw;
+    width: 40%;
+    text-align: center;
+    line-height: 3vw;
+}
+
+#page5-content span{
+    font-family: "dancs";
+    font-size: 4.2vw;
+}
+
+#page5 img{
+    height: 30px;
+    width: auto;
+}
+
+
+#page5-content h4{
+    font-size: 1.2vw;
+    width: 40%;
+    text-align: center;
+    margin: 50px;
+}
+
+#page6{
+    align-items: center;
+}
+
+#page6 h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#page6 h2 span{
+    font-family: dancs;
+}
+
+#page6 .slide-h1{
+    
+    cursor: default;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page6 .slide-h1::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide-h2::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide-h2{
+    
+    cursor: default;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page6 .slide-h2 h1{
+    transform: translateX(-96%);
+}
+
+#page6 h1{
+    font-size: 10vw;
+    line-height: 23vh;
+}
+
+#page6 h1 .one2{
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+    opacity: 0.5;
+}
+
+#page7{
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#page7 h3{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5vw;
+    width: 30%;
+    /* background-color: blue; */
+}
+
+#page7 span{
+    font-size: 3.5vw;
+    font-family: dancs;
+}
+
+#page7-elems{
+    /* background-color: red; */
+    height: 45vh;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+
+#page7-elems #ele1{
+    height: 100%;
+    /* background-color: blue; */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+#page7-elems #ele2{
+    height: 100%;
+    /* background-color: blue; */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+#page7-elems #ele1 h1{
+    z-index: 99;
+    position: relative;
+    font-size: 60px;
+}
+
+#page7-elems #ele2 h1{
+    z-index: 99;
+    position: relative;
+    font-size: 60px;
+}
+
+#page7-elems #ele1 img{
+    transition: opacity ease-in 0.2s;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(10deg);
+}
+#page7-elems #ele2 img{
+    transition: opacity ease-in 0.2s;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(10deg);
+}
+
+#page8{
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    
+}
+#page8 #txt{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#page8 h1{
+    text-align: center;
+    font-size: 8vh;
+}
+
+#page8 #products{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    /* background-color: red; */
+}
+
+#page8 #products #prod1{
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page8 #products #prod1 img{
+    height: 80%;
+    width: 100%;
+    transform: rotate();
+}
+#page8 #products #prod2{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page8 #products #prod2 img{
+    height: 90%;
+    width: 100%;
+}
+
+#page8 #products #prod3{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page8 #products #prod3 img{
+    height: 100%;
+    width: 100%;
+}
+
+#page8 #products #prod4{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page8 #products #prod4 img{
+    height: 90%;
+    width: 100%;
+}
+
+#page8 #products #prod5{
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page8 #products #prod5 img{
+    height: 80%;
+    width: 100%;
+}
+
+#page8 #products img{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(20px 10px 10px black);
+}
+
+#page8 #products div:hover img {
+    z-index: 50;
+    transform: scale(1.2) rotate(10deg);
+}
